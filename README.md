@@ -74,13 +74,15 @@ python LRTcorrect.py
 - `--n_gpus : Number of GPUS to be used. The default is 1.`
 - `--seed : Set the random seeds for your experiment.`
 
-For example, to run AdaCorr on CIFAR10 with 20% uniform noisy level with $L_{ce}$ introduced at epoch 25 and correction starting at 30, you could run:
+For example, to run AdaCorr on CIFAR10 with 20% uniform noisy level with <img src="https://render.githubusercontent.com/render/math?math=L_{ce}"> introduced at epoch 25 and correction starting at 30, you could run:
 ```bash
 python LRTcorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.2 --n_epochs 180 --epoch_start 25 --epoch_update 30
 ```
 
+Current version doesn't support user-customized dataset. If you wish to use AdaCorr on your own dataset, your need to write your own data loader and replace the one used in __LRTcorrect.py__. If you have any question, please contact <imzszhahahaha@gmail.com> for the issue of implementation.
 
 ## Parameter Setting for Experiment Results
+The hyper-parameter setting used to reproduce the result in the paper is presented in Experiment_Log folder. You can simply run these bash file to view the results.
 
 ## Performance
 
