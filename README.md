@@ -6,7 +6,7 @@ This is the code for the paper:
 <br>
 Songzhu Zheng, Pengxiang Wu, Aman Goswami, Mayank Goswami, Dimitris Metaxas, Chao Chen
 </br>
-Presented at [ICML 2020](https://icml.cc/Conferences/2020)
+Presented at [ICML 2020](https://icml.cc/virtual/2020/poster/6161)
 
 If you find this code useful in your research please cite:
 ```
