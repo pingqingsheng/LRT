@@ -1,6 +1,5 @@
 import os
 import sys
-sys.path.append('/home/songzhu/PycharmProjects/AdaCorrect')
 
 import torch.nn as nn
 import torch.nn.parallel
@@ -616,28 +615,6 @@ def main(args):
 
     test_acc = test_correct/test_total*100
     print("Final test accuracy {} %".format(test_correct/test_total*100))
-
-    #files = open('train_'+args.dataset + "(" + args.noise_type + ":" + str(args.noise_level) + '_startepoch:'
-    #             + str(args.epoch_start) +")"+'.pkl', 'wb')
-
-    #pkl.dump(train_acc_record, files)
-    #files.close()
-    #files = open('val_'+args.dataset + "(" + args.noise_type + ":" + str(args.noise_level) + '_startepoch:'
-    #             + str(args.epoch_start) +")"+'.pkl', 'wb')
-    #pkl.dump(val_acc_record, files)
-    #files.close()
-    #files = open('clean_train_'+args.dataset + "(" + args.noise_type + ":" + str(args.noise_level) + '_startepoch:'
-    #             + str(args.epoch_start) +")"+'.pkl', 'wb')
-    #pkl.dump(clean_train_acc_record, files)
-    #files.close()
-    #files = open('noise_train_' + args.dataset + "(" + args.noise_type + ":" + str(args.noise_level) + '_startepoch:'
-    #             + str(args.epoch_start) + ")" + '.pkl', 'wb')
-    #pkl.dump(noise_train_acc_record, files)
-    #files.close()
-    #files = open('recover_' + args.dataset + "(" + args.noise_type + ":" + str(args.noise_level) + '_startepoch:'
-    #             + str(args.epoch_start) + ")" + '.pkl', 'wb')
-    #pkl.dump(recovery_record, files)
-    #files.close()
 
     return test_acc
 
