@@ -1,6 +1,6 @@
 *.ipynb
-data/
+data/*
 !data/*.py
 new_logs/
-Utils/__pycache__
-network/__pycache__
+/Utils/__pycache__
+/network/__pycache__
