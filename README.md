@@ -6,6 +6,7 @@ This is the code for the paper:
 <br>
 Songzhu Zheng, Pengxiang Wu, Aman Goswami, Mayank Goswami, Dimitris Metaxas, Chao Chen
 </br>
+[Paper Link](https://arxiv.org/pdf/2011.10077.pdf)
 Presented at [ICML 2020](https://icml.cc/virtual/2020/poster/6161)
 
 If you find this code useful in your research please cite:
@@ -83,6 +84,20 @@ Current version doesn't support user-customized dataset. If you wish to use AdaC
 
 ## Parameter Setting for Experiment Results
 The hyper-parameter setting used to reproduce the result in the paper is presented in Experiment_Log folder. You can simply run these bash file to view the results.
+
+MNIST
+--------
+Uniform 20%: 
+python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 &
+Uniform 40%:
+python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.4 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 &
+Uniform 60%:
+python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.6 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 &
+Uniform 80%：
+python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.8 --lr 1e-3  --epoch_start 5 --epoch_update 10 --n_epochs 180 --n_gpus 1 --gpu 0 &
+
+===============================================================================================================================================================================================
+
 
 ## Performance
 
