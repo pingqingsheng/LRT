@@ -11,7 +11,7 @@ Presented at [ICML 2020](https://icml.cc/virtual/2020/poster/6161)
 
 If you find this code useful in your research please cite:
 ```
-@inproceedings{jiang2018mentornet,
+@inproceedings{songzhu2020_LRT,
   title={Error-Bounded Correction of Noisy Labels},
   author={Songzhu Zheng, Pengxiang Wu, Aman Goswami, Mayank Goswami, Dimitris Metaxas, Chao Chen},
   booktitle={ICML},
