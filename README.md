@@ -88,23 +88,27 @@ All commands is in following format:
 ```bash
 python -W ignore LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0
 ```
-# MNIST - Uniform Noise#
+### MNIST - Uniform Noise ###
+```bash
 python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0
 python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.4 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 
 python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.6 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 
 python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.8 --lr 1e-3  --epoch_start 5 --epoch_update 10 --n_epochs 180 --n_gpus 1 --gpu 0 
-
-# CIFAR10 - Uniform Noise #
+```
+### CIFAR10 - Uniform Noise ###
+```bash
 python AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --n_epochs 180 --epoch_start 25 --epoch_update 30 --gpu 1 --n_gpus 1
 python AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.4 --lr 1e-3 --n_epochs 180 --epoch_start 25 --epoch_update 30 --gpu 1 --n_gpus 1
 python AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.6 --lr 1e-3 --n_epochs 180 --epoch_start 25 --epoch_update 30 --gpu 1 --n_gpus 1
 python AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.8 --lr 1e-3 --n_epochs 180 --epoch_start 20 --epoch_update 25 --gpu 1 --n_gpus 1 
+```
 
-# CIFAR100 - Uniform Noise #
-
+### CIFAR100 - Uniform Noise ###
+```bash
 python LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type uniform --noise_level 0.4 --epoch_start 25 --epoch_update 30 --gpu 0 --n_gpus 1
 python LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type uniform --noise_level 0.6 --epoch_start 25 --epoch_update 30 --gpu 0 --n_gpus 1
 python LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type uniform --noise_level 0.8 --epoch_start 30 --epoch_update 35 --gpu 0 --n_gpus 1
+```
 
 ## Performance
 
