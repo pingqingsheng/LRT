@@ -1,4 +1,4 @@
-# AdaCorr (Under Construction)
+# AdaCorr
 
 This is the code for the paper:
 
@@ -111,6 +111,8 @@ python -W ignore LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_
 ### Point Cloud - Uniform Noise ###
 
 ## Performance
+![Experiment_Table_1](https://github.com/pingqingsheng/LRT/blob/master/images/exp_table1.png)
+![Experiment_Table_2](https://github.com/pingqingsheng/LRT/blob/master/images/exp_table2.png)
 
 ## Algorithm
 ![LRT Algorithm](https://github.com/pingqingsheng/LRT/blob/master/images/alg_1.png)
