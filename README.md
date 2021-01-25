@@ -113,6 +113,8 @@ python -W ignore LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_
 ## Performance
 
 ## Algorithm
+![LRT Algorithm](https://github.com/pingqingsheng/LRT/blob/master/images/alg_1.png)
+![Training Algorithm](https://github.com/pingqingsheng/LRT/blob/master/images/alg_2.png)
 
 ## Reference
 
