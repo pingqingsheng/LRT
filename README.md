@@ -94,7 +94,7 @@ python -W ignore LRTcorrect.py --dataset mnist --network preact_resnet34 --noise
 python -W ignore LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.4 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 
 python -W ignore LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.6 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 
 python -W ignore LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.8 --lr 1e-3  --epoch_start 5 --epoch_update 10 --n_epochs 180 --n_gpus 1 --gpu 0 
-i```
+```
 #### CIFAR10 - Uniform Noise ####
 ```bash
 python -W ignore AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --n_epochs 180 --epoch_start 25 --epoch_update 30 --gpu 1 --n_gpus 1
