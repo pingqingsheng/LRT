@@ -88,7 +88,9 @@ The hyper-parameter setting used to reproduce the result in the paper is present
 MNIST
 --------
 Uniform 20%: 
+```bash
 python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 &
+```
 Uniform 40%:
 python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.4 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 &
 Uniform 60%:
