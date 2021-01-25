@@ -108,7 +108,9 @@ python -W ignore LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_
 python -W ignore LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type uniform --noise_level 0.6 --epoch_start 25 --epoch_update 30 --gpu 0 --n_gpus 1
 python -W ignore LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type uniform --noise_level 0.8 --epoch_start 30 --epoch_update 35 --gpu 0 --n_gpus 1
 ```
-### Point Cloud - Uniform Noise ###
+#### Point Cloud - Uniform Noise ####
+```bash
+```
 
 ## Performance
 ![Experiment_Table_1](https://github.com/pingqingsheng/LRT/blob/master/images/exp_table1.png)
