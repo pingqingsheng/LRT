@@ -6,7 +6,8 @@ This is the code for the paper:
 <br>
 Songzhu Zheng, Pengxiang Wu, Aman Goswami, Mayank Goswami, Dimitris Metaxas, Chao Chen
 </br>
-Presented at [ICML 2020](https://icml.cc/Conferences/2020)
+[Paper Link](https://arxiv.org/pdf/2011.10077.pdf)
+Presented at [ICML 2020](https://icml.cc/virtual/2020/poster/6161)
 
 If you find this code useful in your research please cite:
 ```
@@ -81,8 +82,32 @@ python LRTcorrect.py --dataset cifar10 --network preact_resnet34 --noise_type un
 
 Current version doesn't support user-customized dataset. If you wish to use AdaCorr on your own dataset, your need to write your own data loader and replace the one used in __LRTcorrect.py__. If you have any question, please contact <imzszhahahaha@gmail.com> for the issue of implementation.
 
-## Parameter Setting for Experiment Results
+## Parameter Setting for Experiment Results ##
 The hyper-parameter setting used to reproduce the result in the paper is presented in Experiment_Log folder. You can simply run these bash file to view the results.
+All commands is in following format:
+```bash
+python -W ignore LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0
+```
+#### MNIST - Uniform Noise ####
+```bash
+python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0
+python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.4 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 
+python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.6 --lr 1e-3 --epoch_start 10 --epoch_update 15 --n_epochs 180 --n_gpus 1 --gpu 0 
+python LRTcorrect.py --dataset mnist --network preact_resnet34 --noise_type uniform --noise_level 0.8 --lr 1e-3  --epoch_start 5 --epoch_update 10 --n_epochs 180 --n_gpus 1 --gpu 0 
+```
+#### CIFAR10 - Uniform Noise ####
+```bash
+python AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.2 --lr 1e-3 --n_epochs 180 --epoch_start 25 --epoch_update 30 --gpu 1 --n_gpus 1
+python AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.4 --lr 1e-3 --n_epochs 180 --epoch_start 25 --epoch_update 30 --gpu 1 --n_gpus 1
+python AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.6 --lr 1e-3 --n_epochs 180 --epoch_start 25 --epoch_update 30 --gpu 1 --n_gpus 1
+python AdaCorrect.py --dataset cifar10 --network preact_resnet34 --noise_type uniform --noise_level 0.8 --lr 1e-3 --n_epochs 180 --epoch_start 20 --epoch_update 25 --gpu 1 --n_gpus 1 
+```
+#### CIFAR100 - Uniform Noise ####
+```bash
+python LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type uniform --noise_level 0.4 --epoch_start 25 --epoch_update 30 --gpu 0 --n_gpus 1
+python LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type uniform --noise_level 0.6 --epoch_start 25 --epoch_update 30 --gpu 0 --n_gpus 1
+python LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type uniform --noise_level 0.8 --epoch_start 30 --epoch_update 35 --gpu 0 --n_gpus 1
+```
 
 ## Performance
 

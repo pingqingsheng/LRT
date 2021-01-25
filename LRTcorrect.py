@@ -616,7 +616,6 @@ def main(args):
     test_acc = test_correct/test_total*100
     print("Final test accuracy {} %".format(test_correct/test_total*100))
 
-
     return test_acc
 
 
