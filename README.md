@@ -119,15 +119,26 @@ python -W ignore LRTcorrect.py --dataset pc --network pc --n_epochs 180 --lr 2e-
 
 #### MNIST - Asymmetric Noise ####
 ```bash
+python -W ignore LRTcorrect.py --dataset mnist --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type asymmetric --noise_level 0.2 --epoch_start 5 --epoch_update 10 --n_gpus 1 --gpu 0
+
+python -W ignore LRTcorrect.py --dataset mnist --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type asymmetric --noise_level 0.4 --epoch_start 5 --epoch_update 10 --n_gpus 1 --gpu 0
+
 ```
 #### CIFAR10 - Asymmetric Noise ####
 ```bash
+python -W ignore LRTcorrect.py --dataset cifar10 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type asymmetric --noise_level 0.2 --epoch_start 20 --epoch_update 25 --n_gpus 1 --gpu 0
+
 ```
 #### CIFAR100 - Asymmetric Noise ####
 ```bash
+python -W ignore LRTcorrect.py --dataset cifar100 --network preact_resnet34 --n_epochs 180 --lr 1e-3 --noise_type asymmetric --noise_level 0.2 --epoch_start 25 --epoch_update 30 --n_gpus 1 --gpu 1
+
 ```
 #### Point Cloud - Asymmetric Noise ####
 ```bash
+python -W ignore LRTcorrect.py --dataset pc --network pc --noise_type asymmetric --lr 2e-3 --noise_level 0.2 --n_epochs 180 --epoch_start 10 --epoch_update 15 --n_gpus 1 --gpu 0
+python -W ignore LRTcorrect.py --dataset pc --network pc --noise_type asymmetric --lr 2.5e-3 --noise_level 0.3 --n_epochs 180 --epoch_start 10 --epoch_update 15 --n_gpus 1 --gpu 0
+python -W ignore LRTcorrect.py --dataset pc --network pc --noise_type asymmetric --lr 2.5e-3 --noise_level 0.4 --n_epochs 180 --epoch_start 10 --epoch_update 15 --n_gpus 1 --gpu 0
 ```
 
 ## Performance
